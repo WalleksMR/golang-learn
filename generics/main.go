@@ -1,6 +1,8 @@
 package main
 
-import "fmt"
+import (
+	"fmt"
+)
 
 func main() {
 	slice1 := []int{1, 2, 3, 5}
@@ -13,7 +15,11 @@ func main() {
 	fmt.Println(reverse(slice2))
 }
 
-func reverse[T int | string](slice []T) []T {
+type constraintCustom interface {
+	int | string
+}
+
+func reverse[T constraintCustom](slice []T) []T {
 	newSlice := make([]T, len(slice))
 
 	newSliceLen := len(newSlice) - 1
