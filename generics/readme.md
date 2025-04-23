@@ -30,6 +30,10 @@
 
 🔄 Versão sem Generics (Comparação):
 
+- Pró: Mais simples de entender
+- Contra: Duplicação de código
+- Contra: Manutenção mais difícil
+
 ```golang
 // Função para int
 func reverseInt(slice []int) []int { /* ... */ }
@@ -37,12 +41,6 @@ func reverseInt(slice []int) []int { /* ... */ }
 // Função para string
 func reverseStr(slice []string) []string { /* ... */ }
 ```
-
----
-
-    - Pró: Mais simples de entender
-    - Contra: Duplicação de código
-    - Contra: Manutenção mais difícil
 
 📊 Tabela Comparativa:
 
