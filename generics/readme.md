@@ -1,28 +1,32 @@
 💡 Vantagens:
 
 1. Reutilização de Código Tipo-Seguro
-   Pró: Escreve a função uma vez e usa com múltiplos tipos
-   Pró: Elimina a necessidade de interface{} e type assertions
+
+   - Pró: Escreve a função uma vez e usa com múltiplos tipos
+   - Pró: Elimina a necessidade de interface{} e type assertions
 
 2. Segurança em Tempo de Compilação
-   Pró: Erros de tipo são capturados antes da execução
+
+   - Pró: Erros de tipo são capturados antes da execução
 
 3. Performance Otimizada
 
-   Pró: Em Go, generics são resolvidos em tempo de compilação (monomorphization), gerando código específico para cada tipo
-   Pró: Evita overhead de reflection ou boxing/unboxing
+   - Pró: Em Go, generics são resolvidos em tempo de compilação (monomorphization), gerando código específico para cada tipo
+   - Pró: Evita overhead de reflection ou boxing/unboxing
 
 ⚠️ Desvantagens:
 
 1. Complexidade Aumentada
-   Contra: Sintaxe mais complexa para desenvolvedores iniciantes
-   Contra: Pode levar a código excessivamente genérico se mal aplicado\
+
+   - Contra: Sintaxe mais complexa para desenvolvedores iniciantes
+   - Contra: Pode levar a código excessivamente genérico se mal aplicado\
 
 2. Limitações nas Constraints
-   Contra: Requer atualização manual da constraint para novos tipos
+
+   - Contra: Requer atualização manual da constraint para novos tipos
 
 3. Legibilidade Reduzida
-   Contra: Tipos genéricos podem dificultar a leitura para alguns desenvolvedores
+   - Contra: Tipos genéricos podem dificultar a leitura para alguns desenvolvedores
 
 🔄 Versão sem Generics (Comparação):
 
@@ -34,9 +38,9 @@ func reverseInt(slice []int) []int { /* ... */ }
 func reverseStr(slice []string) []string { /* ... */ }
 ```
 
-    Pró: Mais simples de entender
-    Contra: Duplicação de código
-    Contra: Manutenção mais difícil
+    - Pró: Mais simples de entender
+    - Contra: Duplicação de código
+    - Contra: Manutenção mais difícil
 
 📊 Tabela Comparativa:
 
