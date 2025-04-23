@@ -38,6 +38,8 @@ func reverseInt(slice []int) []int { /* ... */ }
 func reverseStr(slice []string) []string { /* ... */ }
 ```
 
+---
+
     - Pró: Mais simples de entender
     - Contra: Duplicação de código
     - Contra: Manutenção mais difícil
