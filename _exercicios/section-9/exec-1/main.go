@@ -6,7 +6,7 @@ import (
 	"log"
 	"math/rand"
 
-	"github.com/walleksmr/learn/fluxo-controle/section-9/exec-1/models"
+	"github.com/walleksmr/learn/section-9/exec-1/models"
 )
 
 func main() {
