@@ -21,7 +21,7 @@ func waitGroup() {
 
 - **Funcionamento**:
 
-  -`wg.Add(3)`: Indica que o WaitGroup deve esperar 3 goroutines.
+  - `wg.Add(3)`: Indica que o WaitGroup deve esperar 3 goroutines.
 
   - Cada goroutine chama `wg.Done()` ao finalizar, decrementando o contador.
   - `wg.Wait()`: Bloqueia a thread principal até que o contador chegue a zero.
