@@ -31,10 +31,13 @@ func main() {
 }
 
 // Channel
+// No channel precisa ter o "producer" e "consumer", nao pode ter apenas um ou outro.
+// Muito util de compartilhar informação entre 2 goroutines
 func setList(channel chan int) {
 
 	for value := range 10 {
 		// escrever no channel
+		// Aqui ele trava a goroutine para escrever no canal
 		channel <- value
 	}
 	// Precisa fechar o canal, pois nao vai ter nenhum outra goroutines atribuindo a esse canal.
