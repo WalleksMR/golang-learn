@@ -30,7 +30,7 @@ func waitGroup() {
 
 ## 2. Mutex: Controle de Acesso a Recursos Compartilhados
 
-O `sync.Mutex` (mutual exclusion lock) é usado para evitar **condições de corrida** quando múltiplas goroutines acessam um recurso compartilhado.
+O `sync.Mutex` (mutual exclusion lock) é usado para evitar **condições de corrida** _(race condition)_ quando múltiplas goroutines acessam um recurso compartilhado.
 
 **Exemplo no Código:**
 
