@@ -98,6 +98,10 @@ func setList(channel chan int) {
 
 - **Problema no Exemplo:** A expressão `range 10` é inválida. O correto seria `for i := 0; i < 10; i++`.
 
+**Channel Buffer**
+
+TODO: add
+
 ### Pontos-Chave:
 
 **Goroutines**:
